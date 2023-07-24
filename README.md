@@ -7,3 +7,5 @@ Currently setup for OpenAI GPT-4 and GPT-3.5-Turbo
 
 Dataset:
 https://github.com/OWASP-Benchmark/BenchmarkJava
+
+Bootsrapping this quickly. PRs welcome.
