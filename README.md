@@ -1,2 +1,3 @@
-# LLM_code_scanning_evals
-Tests to measure effectiveness of LLMs at finding security issues in coede
+# LLM code scanning evals
+
+Set of tests to measure effectiveness of LLMs at identifying security issues in code and generating fixes
