@@ -32,10 +32,10 @@ Columns from comparison
 1. vulnerability_type_matches - True if there is a 80%+ fuzzy match between expected_vuln_type and vulnerability
 
 ### How are results calculated
-True Positive - TP = ((df['vulnerability_found'] == True) & (df['metadata_vulnerability_exists'] == True)).sum()
-True Negative - TN = ((df['vulnerability_found'] == False) & (df['metadata_vulnerability_exists'] == False)).sum()
-False Positive - FP = ((df['vulnerability_found'] == True) & (df['metadata_vulnerability_exists'] == False)).sum()
-False Negative - FN = ((df['vulnerability_found'] == False) & (df['metadata_vulnerability_exists'] == True)).sum()
+1. True Positive - TP = ((df['vulnerability_found'] == True) & (df['metadata_vulnerability_exists'] == True)).sum()
+2. True Negative - TN = ((df['vulnerability_found'] == False) & (df['metadata_vulnerability_exists'] == False)).sum()
+3. False Positive - FP = ((df['vulnerability_found'] == True) & (df['metadata_vulnerability_exists'] == False)).sum()
+4. False Negative - FN = ((df['vulnerability_found'] == False) & (df['metadata_vulnerability_exists'] == True)).sum()
 
 ### More information:
 https://medium.com/p/9c2ca0312036
