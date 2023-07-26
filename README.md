@@ -10,11 +10,11 @@ https://github.com/OWASP-Benchmark/BenchmarkJava
 ### How to run:
 1. Download and open the Notebook (owasp_java_benchmark.ipynb) in your choice of Jupyter Notebook environment
 2. Make sure the OpenAI API key is available in the execution environment as env variable OPENAI_API_KEY
-3. Set the value for llm (gpt-4-0613 or gpt-3.5-turbo-0613). GPT-4 is the newest most advanced model from OpenAI at the time of this writing, GPT3.5-Turbo is faster and cheaper
+3. Select the value for llm (gpt-4-0613 or gpt-3.5-turbo-0613). GPT-4 is the newest most advanced model from OpenAI at the time of this writing, GPT3.5-Turbo is faster and cheaper
 4. Set the temperature (between 0-1). This is the attribure that adds variance (highest variance at 1) to the output of the model
 5. Run all the cells in the Notebook
 
-Running all 2470 testcases on GPT-4 will cost you around $100 at the time of this writing. It will cost ~$5 for GPT-3.5-Turbo
+Running all 2470 testcases on GPT-4 will cost around $100 with OpenAI API at the time of this writing. It will cost ~$5 for GPT-3.5-Turbo. More info about pricing - https://openai.com/pricing#language-models
 
 ### How to read the results:
 Columns from OWASP Benchmark
@@ -29,7 +29,7 @@ Columns from the LLM
 5. comment - Human readable comment that helps explain the issue and the code fix
 
 Columns from comparison
-1. vulnerability_type_matches - True if there is a 80%+ fuzzy match between expected_vuln_type and vulnerability
+1. vulnerability_type_matches - True if there is a 80%+ fuzzy match between expected_vuln_type (from OWASP Benchmark) and vulnerability (from the LLM)
 
 ### How are results calculated
 1. True Positive - TP = ((df['vulnerability_found'] == True) & (df['metadata_vulnerability_exists'] == True)).sum()
