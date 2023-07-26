@@ -11,7 +11,7 @@ https://github.com/OWASP-Benchmark/BenchmarkJava
 1. Download and open the Notebook (owasp_java_benchmark.ipynb) in your choice of Jupyter Notebook environment
 2. Install the depedencies using pip install -r requirements.txt
 3. Make sure the OpenAI API key is available in the execution environment as env variable OPENAI_API_KEY
-4. Select the value for llm (gpt-4-0613 or gpt-3.5-turbo-0613). GPT-4 is the newest most advanced model from OpenAI at the time of this writing, GPT3.5-Turbo is faster and cheaper
+4. Select the value for LLM (gpt-4-0613 or gpt-3.5-turbo-0613). GPT-4 is the newest most advanced model from OpenAI at the time of this writing, GPT3.5-Turbo is faster and cheaper
 5. Set the temperature (between 0-1). This is the attribure that adds variance (highest variance at 1) to the output of the model
 6. Run all the cells in the Notebook
 
